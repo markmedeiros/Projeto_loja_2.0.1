@@ -1,0 +1,132 @@
+.img_cabecalio_div{
+    max-width: 600px;
+    margin: auto;
+}
+.img_cabecalio_div_max{
+    display: none;
+    max-width: 1800px;
+    height: 350px;  
+}
+.img_cabecalio_max{
+    height: 100%;
+    width: 100%;
+}
+.img_cabecalio{
+    width: 100%;
+}
+.cabecalio_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 15px;  
+}
+.input_busca{
+    padding: 8px;
+    border: 1px solid #111744;
+    border-radius: 7px;
+    width: 195px;
+}
+.input_busca::placeholder{
+    color: rgba(0, 34, 0, 0.692);
+}
+.svg_cabecalio{
+    width: 35px;
+    height: 35px;
+}
+
+.destaque_flex{
+    display: flex;
+    align-items: center;
+}
+.d1{
+    border-radius: 50%;
+    border: 2.7px solid rgb(15, 136, 15);
+    width: 66px;
+    height: 66px;
+    margin: 10px 10px;
+    transition: .4s;
+    box-shadow: 0 0 5px rgb(9, 92, 9);
+}
+.d1_js{
+    box-shadow: none !important;
+    border: none !important;
+}
+.d1:hover{
+    transform: scale(1.05);
+}
+.img_dest{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.img_d{
+    width: 0px;
+    height: 0px;
+    border-radius: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    border-radius: 10px;
+    transition: .4s;
+}
+.img_d_js{
+    width: 360px !important;
+    height: 400px !important;
+}
+.produtos{
+    background-color: #91b1db;
+    margin-top: 15px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+/* ESTILO DO CORPO*/
+.column{
+    max-width: 800px;
+    margin: auto;
+}
+.eletronicos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin: 15px 20px;
+    border-radius: 20px;
+    transition: .4s;
+    padding-left: 20px;
+}
+.eletronicos:hover{
+    transform: scale(1.05);
+    background-color: rgb(196, 238, 196);
+}
+.corpo_img{
+    width: 140px;
+    height: 120px;
+    border-radius: 0 20px 20px 0;
+}
+@media screen and (max-width: 600px) {
+    
+}
+@media screen and (min-width: 601px) and (max-width: 30000px){
+    .img_cabecalio{
+        display: none;
+    }
+    .img_cabecalio_div_max{
+        display: block !important;
+    }
+    .produtos{
+        max-width: 950px;
+        margin: auto;
+    }
+    .cabecalio_flex{
+        max-width: 900px;
+        margin: auto;
+        padding: 35px;
+    }
+    .destaque_max{
+        max-width: 1100px;
+        margin: auto;
+        padding: 35px;
+    }
+}
