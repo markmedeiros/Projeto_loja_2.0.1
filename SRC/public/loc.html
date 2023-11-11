@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style_geral.css">
+    <link rel="stylesheet" href="../style/style_inicio.css">
+    <link rel="stylesheet" href="../style/loc.css">
+    <title>Localização</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalio_fundo">
+            <div class="img_cabecalio_div">
+                <img src="../img/sua_loja.png" alt="" class="img_cabecalio">
+            </div>
+        </div>
+        <div class="img_cabecalio_div_max">
+            <img class="img_cabecalio_max" src="../img/sua_loja_esticada.png" alt="">
+        </div>
+        <div class="body_max">
+            <div class="cabecalio_flex">
+                <div>
+                    <input class="input_busca" id="input_busca" type="text" placeholder="O que você está procurando?">
+                </div>
+                <div>
+                    <a href="carrinho.html">
+                        <svg class="svg_cabecalio" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16" color="#111744">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="menu" id="menu">
+            <div class="flex">
+             <div><a href="#"><img src="../img/sgv/login.svg" alt=""></a></div>   
+             <div><a href="../public/loc.html"><img src="../img/sgv/loc.svg" alt=""></a></div>   
+             <div><a href="inicio.html"><img src="../img/sgv/inicio.svg" alt=""></a></div>   
+             <div><a href="#"><img src="../img/sgv/gplay.svg" alt=""></a></div>   
+             <div><a href="#"><img src="../img/sgv/tel.svg" alt=""></a></div>   
+            </div>
+        </div>
+    </header>
+    <div class="menu" id="menu">
+        <div class="flex">
+         <div><a href="#"><img src="../img/sgv/login.svg" alt=""></a></div>   
+         <div><a href="#"><img src="../img/sgv/loc.svg" alt=""></a></div>   
+         <div><a href="inicio.html"><img src="../img/sgv/inicio.svg" alt=""></a></div>   
+         <div><a href="#"><img src="../img/sgv/gplay.svg" alt=""></a></div>   
+         <div><a href="#"><img src="../img/sgv/tel.svg" alt=""></a></div>   
+        </div>
+    </div>
+    <div class="loc">
+        <h1 class="h1">Escolha um Bairro de Manaus:</h1>
+        <ul id="bairro-lista">
+            <!-- Adicione mais bairros conforme necessário -->
+        </ul>    
+    </div>
+    
+    <!-- Campos de input para o nome do bairro e preço -->
+    <div class="label_bairro">
+        <div>
+            <label for="inputBairro" class="label">Nome do Bairro:</label>
+            <input type="text" id="inputBairro" class="inputBairro">
+        </div>
+        <div>
+            <label for="inputPreco" class="label">Preço:</label>
+            <input type="text" id="inputPreco" class="inputBairro">
+        </div>
+        <!-- Botão para chamar a função de adicionar -->
+        <div><button class="button_bairro" onclick="adicionarBairro()">Adicionar Bairro</button></div>
+    </div>
+    <script src="../js/loc.js"></script>
+</body>
+</html>

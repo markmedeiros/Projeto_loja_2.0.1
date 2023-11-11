@@ -1,0 +1,27 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    height: 150px; /* Ajuste conforme necessário */
+    overflow-y: auto;
+}
+
+li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+}
+.label_bairro{
+    padding: 20px;
+    background-color: #91b1db;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 53px;
+}
+.label{
+    padding: 10px;
+}
+.inputBairro{
+    padding: 8px;
+}
